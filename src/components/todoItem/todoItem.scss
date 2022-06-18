@@ -1,0 +1,48 @@
+.todoItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 20px;
+    background-color: #2678711c;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 10px;
+
+    .left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .completeBtn {
+        font-size: 20px;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+
+      .title {
+        margin: 0px 20px;
+        span {
+          font-size: 20px;
+          font-weight: 400;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .right {
+      i {
+        color: red;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+}
